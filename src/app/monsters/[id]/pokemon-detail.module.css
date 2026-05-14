@@ -1,0 +1,248 @@
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3b82f6;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+}
+
+.backButton:hover {
+    color: #1d4ed8;
+}
+
+.backButton svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.pokemonCard {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+
+.pokemonHeader {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    padding: 1.5rem;
+    color: white;
+}
+
+.pokemonId {
+    font-size: 1.125rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.pokemonName {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-top: 0.25rem;
+    text-transform: capitalize;
+}
+
+.typeBadges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.typeBadge {
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+.contentGrid {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contentGrid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+}
+
+
+.imageSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainImage {
+    width: 16rem;
+    height: 16rem;
+    object-fit: contain;
+}
+
+.additionalImages {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.additionalImage {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.additionalImage:hover {
+    transform: scale(1.1);
+}
+
+
+.detailsSection h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.detailGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.detailLabel {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.detailValue {
+    font-weight: 500;
+}
+
+
+.abilitiesContainer {
+    margin-bottom: 1.5rem;
+}
+
+.abilityBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.abilityBadge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background-color: #f3f4f6;
+    color: #374151;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+}
+
+.hiddenAbility {
+    margin-left: 0.25rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+
+.statContainer {
+    margin-bottom: 0.75rem;
+}
+
+.statHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.statName {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-transform: capitalize;
+}
+
+.statValue {
+    font-weight: 700;
+    color: #111827;
+}
+
+.statBarContainer {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #e5e7eb;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.statBar {
+    height: 100%;
+    border-radius: 0.25rem;
+    background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.navButton {
+    padding: 0.5rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.navButton:hover {
+    background-color: #2563eb;
+}
+
+.navButton svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+
+.typeNormal { --type-color: #A8A878; }
+.typeFire { --type-color: #F08030; }
+.typeWater { --type-color: #6890F0; }
+.typeElectric { --type-color: #F8D030; }
+.typeGrass { --type-color: #78C850; }
+.typeIce { --type-color: #98D8D8; }
+.typeFighting { --type-color: #C03028; }
+.typePoison { --type-color: #A040A0; }
+.typeGround { --type-color: #E0C068; }
+.typeFlying { --type-color: #A890F0; }
+.typePsychic { --type-color: #F85888; }
+.typeBug { --type-color: #A8B820; }
+.typeRock { --type-color: #B8A038; }
+.typeGhost { --type-color: #705898; }
+.typeDragon { --type-color: #7038F8; }
+.typeDark { --type-color: #705848; }
+.typeSteel { --type-color: #B8B8D0; }
+.typeFairy { --type-color: #EE99AC; }
